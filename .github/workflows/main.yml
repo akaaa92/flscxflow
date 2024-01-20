@@ -28,7 +28,7 @@ jobs:
         uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.9
         with:
           # Provide Checkmarx URL
-          checkmarx_url: http://172.17.128.1
+          checkmarx_url: http://192.168.56.1:80 
           # Provide team
           team: /CxServer
           # Provide Checkmarx Username
