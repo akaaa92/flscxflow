@@ -25,15 +25,15 @@ jobs:
             CHECKMARX_SCOPE : "access_control_api sast_api"
         with:
     # Provide Checkmarx URL
-          checkmarx_url: ${{secrets.CHECKMARX_URL}}
+          checkmarx_url: http://192.168.56.1:80
     # Select a Checkmarx Team
           team: "CxServer/CxFlow"
     # Provide Checkmarx Username
-          checkmarx_username: ${{secrets.CHECKMARX_USERNAME}}
+          checkmarx_username: Akash
     # Provide Checkmarx Password
-          checkmarx_password: ${{secrets.CHECKMARX_PASSWORD}} 
+          checkmarx_password: 1stPASSWORD-132
     # Provide Checkmarx Client Secret
-          checkmarx_client_secret: ${{secrets.CHECKMARX_CLIENT_SECRET}}
+          checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C
     # Select a Checkmarx Project
           project: test_new_proj
     # Select an Application Name used by downstream bug tracker systems
