@@ -35,7 +35,8 @@ jobs:
     # Provide Checkmarx Client Secret
           checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C
     # Select a Checkmarx Project
-    # Select an Application Name used by downstream bug tracker systems
+          project: test_branching/${{ github.ref }}
+ # Select an Application Name used by downstream bug tracker systems
           app: APPSEC
     # Select a Checkmarx Preset
           #preset: High and Medium
